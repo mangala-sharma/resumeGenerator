@@ -1,0 +1,83 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+#navbar{
+   
+    background-color: skyblue;
+    text-align:center;
+    padding:7px;
+    color:white;
+    
+}
+
+.container-fluid{
+    display:grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.personal{
+    display:flex;
+    flex-direction: column;
+
+}
+.personal input, textarea{
+  padding:12px;
+  margin: 12px;
+  border-radius:12px;
+  background-color: rgb(225, 238, 234);
+}
+
+.imginpu{
+    display:flex;
+}
+
+.personal .imginpu img{
+    display:block;
+    width:38px;
+    margin:12px;
+}
+
+#linku input{
+    width:100%;
+
+}
+/* professional info */
+.professional{
+    display:flex;
+    flex-direction:column;
+}
+
+.professional textarea{
+    margin:12px;
+}
+
+footer{
+    background-color: skyblue;
+    text-align:center;
+    padding: 17px;
+    
+}
+
+/* utility classes */
+ h1 ,h2{
+    text-align:center;
+}
+
+label{
+    position:relative;
+    left:20px;
+}
+
+.btn{
+   background-color: skyblue;
+   display: block;
+   margin:15px auto;
+   padding: 14px;
+   border-radius: 19px;
+   cursor: pointer;
+   color:rgb(19, 4, 105);
+}
