@@ -8,6 +8,10 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+    <!-- cv-form -->
+
+    <div id="cv-form">
     <nav id="navbar">
         <h1>Resume generator</h1>
         <p>designed by mangala sharma</p>
@@ -20,8 +24,8 @@
         <form>
 
         <div class="personal">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="enter your name here" name="uname">
+        <label for="nameF">Name:</label>
+        <input type="text" id="nameF" placeholder="enter your name here" name="uname">
          
         <label for="emai">Email:</label>
        <input type="email" id="emai" placeholder="enter your email here" name="uemail">
@@ -41,11 +45,11 @@
        <h4>Important Links</h4>
 
        <div id="linku">
-       <label for="pro">Project:</label>
+       <label for="gitu">Github:</label>
        <div class="imginpu">
            <span><img src="imgs/project.png"> 
            </span> 
-       <input type="text" id="pro" placeholder="enter your project link here" name="upro"></div>
+       <input type="text" id="gitu" placeholder="enter your github link here" name="upro"></div>
 
         <label for="fb">Facebook:</label>
         <div class="imginpu">
@@ -76,25 +80,34 @@
             <div class="professional">
                 
                 <label for="cob">Career Objective</label>
-                <textarea name="career" id="cob" cols="30" rows="8"></textarea>
+                <textarea name="career" id="cob" cols="30" rows="5"></textarea>
 
+                <!-- acedmic qualic -->
                 <div id="accb" class="professional">
                 <label for="acedmic">Acedmics</label>
-                <textarea name="acedmica" id="acedmic" cols="30" rows="8"></textarea>
-                <button id="acbtn" class="btn" onclick="addNode()">add</button>
+                <textarea class="acedmica" id="acedmic" cols="30" rows="5"></textarea>
+                <button id="acbtn" class="btn addbtn" onclick="addNode()">add</button>
             </div>
 
+            <!-- work experience -->
             <div id="wecb" class="professional">
                 <label for="expe">Work Eperience</label>
-                <textarea name="ews" id="expe" cols="30" rows="8"></textarea>
-                <button id="webtn" class="btn" onclick="addNodew()">add</button>
+                <textarea class="ews" id="expe" cols="30" rows="5"></textarea>
+                <button id="webtn" class="btn addbtn" onclick="addNodew()">add</button>
             </div>
 
+            <!-- skills -->
                 <div id="skiu" class="professional">
                 <label for="ski">Skills</label>
-                <textarea name="skillse" id="ski" cols="30" rows="8"></textarea>
-                <button id="skibtn" class="btn" onclick="addNodes()">add</button>
+                <textarea class="skillse" id="ski" cols="30" rows="5"></textarea>
+                <button id="skibtn" class="btn addbtn" onclick="addNodes()">add</button>
+                    </div>
 
+                    <!-- extra curriculum -->
+                
+                    <label for="extcuri">Extra Curriculum</label>
+                    <textarea name="extcurrise" id="extcuri" cols="30" rows="8"></textarea>
+                
             </div>
         </aside>
 
@@ -107,6 +120,77 @@
         <p>Designed and Developed by Mangala sharma</p>
         <p>All rights reserved &copy; 2023 </p>
     </footer>
+</div>
+
+    <!-- cv-template -->
+    <div id="cv-template">
+
+        <div class="container-temp">
+            <section class="center background">
+                <h1>profile section</h1>
+                <div>
+                <img src="/" alt=""></div>
+
+                <p id="nameT">Aman kumar tiwari</p>
+                <p id="emaiT">amankumartiwari@gmail.com</p>
+                <p id="phnoT">+91 7637364749 , +91  8474847380</p>
+                <p id="addT">gram mohri rai ashok nagar ,m.p.</p>
+<hr>
+
+<p>
+    <a id="fbT" href="">aman kumar facebook</a>
+</p>
+
+                <p>
+                    <a id="inT" href="">aman kumar instagram</a>
+                </p>
+                <p>
+                    <a id="ghT" href="">aman kumar github</a>
+                </p>
+                <p>
+                    <a id="lnkT" href="">aman kumar linkedin</a>
+                </p>
+            </section>
+
+            <aside class="temp-aside">
+                <h1 id="namTt">Aman kumar tiwari</h1>
+                <h3 class="background">career objective</h3>
+                <p id="cobT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat saepe autem modi cum recusandae, sapiente et sit nostrum tempora. Molestiae est reiciendis aliquam, eos fugiat neque debitis eligendi, at laborum ducimus sunt aspernatur?</p>
+
+                <h3 class="background">Acedmics</h3>
+                <ul id="AcT">
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non distinctio eos nisi?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veritatis voluptate unde.</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat tempora fugiat ratione?</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos tempora dolor quam?</li>
+                </ul>
+
+                <h3 class="background">Work experience</h3>
+                <ul id="weT">
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non distinctio eos nisi?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veritatis voluptate unde.</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat tempora fugiat ratione?</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos tempora dolor quam?</li>
+                </ul>
+
+                <h3 class="background">Skill sets</h3>
+                <ul id="skiT">
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non distinctio eos nisi?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veritatis voluptate unde.</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat tempora fugiat ratione?</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos tempora dolor quam?</li>
+                </ul>
+
+                <h3 class="background">Extra curriculum</h3>
+                <p id="extcurriT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat saepe autem modi cum recusandae, sapiente et sit nostrum tempora. Molestiae est reiciendis aliquam, eos fugiat neque debitis eligendi, at laborum ducimus sunt aspernatur?</p>
+
+                <button id="prin" onclick="printCv()" class="btn">print CV</button>
+            </aside>
+        </div>
+
+    </div>
+
+
     <script src="javascr.js">
     </script>
 
