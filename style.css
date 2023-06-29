@@ -5,6 +5,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Bree Serif', serif;
+    color:black;
 }
 
 #navbar{
@@ -12,8 +13,6 @@ body{
     background-color: skyblue;
     text-align:center;
     padding:7px;
-    color:white;
-    
 }
 
 .container-fluid{
@@ -94,7 +93,7 @@ label{
     text-align:center;
 }
 .background{
-    background-color:aqua;
+    background-color:skyblue;
   }
 
 .btn{
@@ -102,6 +101,7 @@ label{
    display: block;
    margin:15px auto;
    padding: 12px 39px;
+   border:1px solid blue;
    border-radius: 19px;
    cursor: pointer;
    font-family: 'Bree Serif', serif;
