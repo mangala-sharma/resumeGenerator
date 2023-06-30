@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>resume generator</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="responshiv.css" media="screen and (max-width:660px)">
 </head>
 <body>
 
@@ -37,10 +38,9 @@
         
        <textarea name="uaddre" id="addre" placeholder="enter your address here" cols="30" rows="5"></textarea>
 
-       <label for="profile">Photo:</label>
+       <label for="profile">Select your Photo:</label>
        <div class="imginpu">
-        <span><img src="imgs/nam.png"> 
-        </span> <input type="file" id="profile" ></div>
+        <input type="file" id="profile" ></div>
 
        <h4>Important Links</h4>
 
@@ -106,7 +106,7 @@
                     <!-- extra curriculum -->
                 
                     <label for="extcuri">Extra Curriculum</label>
-                    <textarea name="extcurrise" id="extcuri" cols="30" rows="8"></textarea>
+                    <textarea name="extcurrise" id="extcuri" cols="30" rows="6"></textarea>
                 
             </div>
         </aside>
@@ -128,8 +128,8 @@
         <div class="container-temp">
             <section class="center background">
                 <h1>profile section</h1>
-                <div>
-                <img src="/" alt=""></div>
+                <div id="images">
+                <img id="cvimg" src="imgs/default.png" alt=""></div>
 
                 <p id="nameT">Aman kumar tiwari</p>
                 <p id="emaiT">amankumartiwari@gmail.com</p>

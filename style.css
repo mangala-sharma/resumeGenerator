@@ -10,7 +10,7 @@ body{
 
 #navbar{
    
-    background-color: skyblue;
+    background-color: lightblue;
     text-align:center;
     padding:7px;
 }
@@ -52,6 +52,11 @@ body{
     flex-direction:column;
 }
 
+#images img{
+    width:145px;
+    border-radius:70px ;
+}
+
 .professional textarea{
     margin:12px;
 }
@@ -61,7 +66,7 @@ body{
 }
 
 footer{
-    background-color: skyblue;
+    background-color: lightblue;
     text-align:center;
     padding: 17px;
     
@@ -84,7 +89,7 @@ footer{
     text-align:center;
 }
 
-label{
+label , h4{
     position:relative;
     left:20px;
 }
@@ -93,11 +98,11 @@ label{
     text-align:center;
 }
 .background{
-    background-color:skyblue;
+    background-color:lightblue;
   }
 
 .btn{
-   background-color: skyblue;
+   background-color: lightblue;
    display: block;
    margin:15px auto;
    padding: 12px 39px;

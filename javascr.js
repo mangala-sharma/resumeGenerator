@@ -74,7 +74,7 @@ console.log("generate cv")
 
     // professional 
 
-    let acedmic = document.getElementsByClassName('acedmica');
+    let acedmic = document.querySelectorAll('#accb textarea');
      let str ="";
 
      for(let e of acedmic)
@@ -85,7 +85,7 @@ console.log("generate cv")
 
 
     //  work experience
-     let workexob=document.getElementsByClassName('ews');
+     let workexob=document.querySelectorAll('#wecb textarea');
      let str1 ="";
      for(let e of workexob){
         str1= str1+`<li> ${e.value} </li>`;
@@ -93,7 +93,7 @@ console.log("generate cv")
      document.getElementById('weT').innerHTML=str1;
 
     //  skills
-    let skillse = document.getElementsByClassName('skillse');
+    let skillse = document.querySelectorAll('#skiu textarea');
      let str2 =" ";
 
      for(let e of skillse){
@@ -104,6 +104,15 @@ console.log("generate cv")
     //  extra curri
     document.getElementById('extcurriT').innerHTML = document.getElementById('extcuri').value;
      
+    
+    let file= document.getElementById('profile').files[0];
+    let reader= new FileReader()
+    reader.readAsDataURL(file);
+    // set image in template
+
+    reader.onloadend = function(){
+        document.getElementById("cvimg").src=reader.result;
+    }
     
 
      document.getElementById('cv-form').style.display='none';
